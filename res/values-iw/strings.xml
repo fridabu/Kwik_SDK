@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">kwik.me</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Base Activity -->
+    <string name="base_activity_back">אחורה</string>
+    <string name="base_activity_next">הבא</string>
+
+    <!-- Start Activity -->
+    <string name="start_activity_log_in">הכנס</string>
+    <string name="start_activity_sign_up">הרשם</string>
+    <string name="start_activity_sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="start_activity_terms_and_conditions">&lt;font color=#a1a1a1&gt; By signing in you are agreeing to the&lt;//font&gt;&lt;b&gt; Terms \u0026 Conditions &lt;//b&gt;</string>
+
+</resources>

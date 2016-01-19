@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/signup_animation_frame1" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame2" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame3" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame4" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame5" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame6" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame7" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame8" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame9" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame10" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame11" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame12" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame13" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame14" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame15" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame16" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame17" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame18" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame19" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame20" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame21" android:duration="23"/>
+    <item android:drawable="@drawable/signup_animation_frame22" android:duration="23"/>
+    <!--
+  <item android:drawable="@drawable/signup_animation_frame23" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame24" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame25" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame26" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame27" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame28" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame29" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame30" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame31" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame32" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame33" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame34" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame35" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame36" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame37" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame38" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame39" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame40" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame41" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame42" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame43" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame44" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame45" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame46" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame47" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame48" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame49" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame50" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame51" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame52" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame53" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame54" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame55" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame56" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame57" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame58" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame59" android:duration="23"/>
+  <item android:drawable="@drawable/signup_animation_frame60" android:duration="23"/>
+
+<item android:drawable="@drawable/signup_animation_frame61" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame62" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame63" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame64" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame65" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame66" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame67" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame68" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame69" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame70" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame71" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame72" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame73" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame74" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame75" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame76" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame77" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame78" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame79" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame80" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame81" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame82" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame83" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame84" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame85" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame86" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame87" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame88" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame89" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame90" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame91" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame92" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame93" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame94" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame95" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame96" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame97" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame98" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame99" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame100" android:duration="23"/>
+
+<item android:drawable="@drawable/signup_animation_frame101" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame102" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame103" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame104" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame105" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame106" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame107" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame108" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame109" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame110" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame111" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame112" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame113" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame114" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame115" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame116" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame117" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame118" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame119" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame120" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame121" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame122" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame123" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame124" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame125" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame126" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame127" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame128" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame129" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame130" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame131" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame132" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame133" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame134" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame135" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame136" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame137" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame138" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame139" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame140" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame141" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame142" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame143" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame144" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame145" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame146" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame147" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame148" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame149" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame150" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame151" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame152" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame153" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame154" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame155" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame156" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame157" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame158" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame159" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame160" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame161" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame162" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame163" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame164" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame165" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame166" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame167" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame168" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame169" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame170" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame171" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame172" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame173" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame174" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame175" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame176" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame177" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame178" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame179" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame180" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame181" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame182" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame183" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame184" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame185" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame186" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame187" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame188" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame189" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame190" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame191" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame192" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame193" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame194" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame195" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame196" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame197" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame198" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame199" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame200" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame201" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame202" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame203" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame204" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame205" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame206" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame207" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame208" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame209" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame210" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame211" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame212" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame213" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame214" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame215" android:duration="23"/>
+<item android:drawable="@drawable/signup_animation_frame216" android:duration="23"/>
+-->
+</animation-list>

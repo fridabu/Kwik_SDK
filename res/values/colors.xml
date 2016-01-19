@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#2e3947</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="kwik_me_screen_background_color">#2e3947</color>
+    <color name="kwik_me_button_background_color">#00cee2</color>
+    <color name="kwik_me_button_text_color">#ffffff</color>
+    <color name="kwik_me_facebook_color">#6387dc</color>
+    <color name="kwik_me_text_white">#ffffff</color>
+    <color name="kwik_me_gray_comments">#a1a1a1</color>
+</resources>

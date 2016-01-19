@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/kwik_me_screen_background_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:buttonStyle">@style/KwikButtonsStyle</item>
+        <item name="android:typeface">monospace</item>
+        <item name="actionBarSize">56dp</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="KwikButtonsStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/kwik_me_button_text_color</item>
+        <item name="android:background">@color/kwik_me_button_background_color</item>
+    </style>
+
+
+</resources>

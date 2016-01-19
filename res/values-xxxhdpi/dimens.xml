@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Start activity -->
+    <dimen name="start_activity_logo_margin_top">54dp</dimen>
+    <dimen name="start_activity_animation_margin_top">69dp</dimen>
+    <dimen name="start_activity_buttons_margin_top">78dp</dimen>
+
+    <!-- Action Bar -->
+    <dimen name="action_bar_title_text_size">16sp</dimen>
+    <dimen name="action_bar_arrow_text_size">13sp</dimen>
+    <dimen name="action_bar_arrow_icon_padding">5dp</dimen>
+
+    <!-- Signup Activity -->
+    <dimen name="sign_up_activity_comment_text_size">15sp</dimen>
+    <dimen name="sign_up_activity_comment_margin_top">4dp</dimen>
+    <dimen name="sign_up_activity_phone_input_layout_margin_top">25dp</dimen>
+
+    <!-- Log in Activity -->
+    <dimen name="log_in_activity_comment_margin_top">4dp</dimen>
+    <dimen name="log_in_activity_comment_text_size">15sp</dimen>
+
+</resources>
