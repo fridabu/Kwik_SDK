@@ -11,4 +11,7 @@
     <color name="kwik_me_facebook_color">#6387dc</color>
     <color name="kwik_me_text_white">#ffffff</color>
     <color name="kwik_me_gray_comments">#a1a1a1</color>
+    <color name="kwik_me_black">#313131</color>
+    <color name="kwik_me_link_message">#00c2d5</color>
+    <color name="kwik_white">#ffffff</color>
 </resources>

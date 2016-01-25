@@ -22,4 +22,14 @@
     <string name="log_in_activity_phone_hint">Phone</string>
     <string name="log_in_activity_used_for_delivery_coordination">Used for delivery coordination</string>
 
+    <string-array name="sports_array">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
+
 </resources>

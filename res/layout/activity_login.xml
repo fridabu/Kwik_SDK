@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="me.kwik.app.LoginActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/kwik_me_text_white">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/sign_up_activity_phone_input_layout"
@@ -17,7 +18,7 @@
         android:background="@android:color/transparent">
 
         <EditText
-            android:id="@+id/sign_up_activity_phone_edit_text"
+            android:id="@+id/login_activity_phone_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/log_in_activity_phone_hint"/>
@@ -35,5 +36,11 @@
         android:textSize="@dimen/log_in_activity_comment_text_size"
         android:typeface="normal"
         android:layout_marginTop="@dimen/log_in_activity_comment_margin_top"/>
+
+    <include
+        android:id="@+id/log_in_activity_common_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_base" />
 
 </LinearLayout>

@@ -9,7 +9,7 @@ import android.util.LruCache;
 
 /**
  * Created by Farid on 1/18/2016.
- * Class for changing action bar text fon:
+ * Class for changing action bar text font
  * http://stackoverflow.com/a/15181195
  */
 public class TypefaceSpan extends MetricAffectingSpan {

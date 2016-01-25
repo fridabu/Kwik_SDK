@@ -22,7 +22,9 @@
             android:id="@+id/sign_up_activity_name_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sign_up_activity_name_hint" />
+            android:hint="@string/sign_up_activity_name_hint"
+            android:singleLine="true"
+            android:lines="1"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -37,7 +39,9 @@
             android:id="@+id/sign_up_activity_phone_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sign_up_activity_phone_hint"/>
+            android:hint="@string/sign_up_activity_phone_hint"
+            android:singleLine="true"
+            android:lines="1"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -52,5 +56,11 @@
         android:textSize="@dimen/sign_up_activity_comment_text_size"
         android:typeface="normal"
         android:layout_marginTop="@dimen/sign_up_activity_comment_margin_top"/>
+
+    <include
+        android:id="@+id/sign_up_activity_common_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_base" />
 
 </LinearLayout>
