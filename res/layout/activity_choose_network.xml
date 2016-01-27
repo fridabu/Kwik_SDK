@@ -39,12 +39,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/choose_network_icon_text_view"
-        android:entries="@array/sports_array"
+        android:layout_above="@+id/choose_network_enter_manually_network_edit_text"
         />
 
+    <EditText
+        android:id="@+id/choose_network_enter_manually_network_edit_text"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:hint="Or Enter manually"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/choose_network_scan_again_text_view"
+        android:layout_marginTop="10dp"
+        style="@style/KwikEditTextStyle"
+        android:layout_marginBottom="20dp" />
 
     <TextView
-        android:id="@+id/wifi_prepare_help_link_text_view"
+        android:id="@+id/choose_network_help_link_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Need Help?"
@@ -55,5 +67,26 @@
         android:gravity="center"
         android:textColor="@color/kwik_me_link_message"
         android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/choose_network_scan_again_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan again"
+        android:background="@color/kwik_me_text_white"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/kwik_me_link_message"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/choose_network_help_link_text_view"/>
+
+    <include
+        android:id="@+id/log_in_activity_common_ui"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/choose_network_icon_text_view"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_base" />
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package me.kwk.utils;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.text.Editable;
 import android.text.Selection;
@@ -14,6 +15,8 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 
 import java.util.ArrayList;
+
+import me.kwik.app.R;
 
 /**
  * Created by root on 25/01/16.
@@ -135,7 +138,7 @@ public class Utils {
         // some other visual settings for popup window
         popupWindow.setFocusable(true);
         popupWindow.setWidth(250);
-        popupWindow.setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.WHITE));
         popupWindow.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
 
         // set the listview as popup content
