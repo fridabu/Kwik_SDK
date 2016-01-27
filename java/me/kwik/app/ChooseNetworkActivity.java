@@ -34,6 +34,7 @@ public class ChooseNetworkActivity extends BaseActivity {
     private List<ScanResult> wifiList;
     private EditText mEnterManualyNetworkEditText;
     private ArrayAdapter<TextView> mWifiListAdapter;
+    private String selectedNetworkName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,5 +172,13 @@ public class ChooseNetworkActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
 
+    }
+
+    @Override
+    protected void clickNext() {
+        super.clickNext();
+        Intent i = new Intent(ChooseNetworkActivity.this,NetworkPasswordActivity.class);
+        i.putExtra("selectedWiFiSsid",selectedNetworkName);
+        startActivity(i);
     }
 }
