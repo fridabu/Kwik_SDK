@@ -63,7 +63,6 @@
         android:gravity="center"
         android:textColor="@color/kwik_me_text_white"
         android:layout_above="@+id/button_to_ap_activity_help_link_text_view"
-        android:layout_marginBottom="20dp"/>
-
+        android:layout_marginBottom="20dp" />
 
 </RelativeLayout>

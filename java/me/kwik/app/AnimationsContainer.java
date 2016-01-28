@@ -13,7 +13,7 @@ import java.lang.ref.SoftReference;
  */
 public class AnimationsContainer {
 
-    public int FPS = 23;  // animation FPS
+    public int FPS = 33;  // animation FPS
 
     // single instance procedures
     private static AnimationsContainer mInstance;
@@ -629,7 +629,7 @@ public class AnimationsContainer {
             mSoftReferenceImageView = new SoftReference<ImageView>(imageView);
             mShouldRun = false;
             mIsRunning = false;
-            mDelayMillis = fps;
+            mDelayMillis = 100/fps;
 
             imageView.setImageResource(mFrames[0]);
 
