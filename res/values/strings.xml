@@ -22,5 +22,8 @@
     <string name="log_in_activity_phone_hint">Phone</string>
     <string name="log_in_activity_used_for_delivery_coordination">Used for delivery coordination</string>
 
+    <!-- Network Password Activity -->
+    <string name="network_password_activity_save_comment">Your network details will be saved</string>
+    <string name="network_password_enter_password_hint">Enter Password</string>
 
 </resources>

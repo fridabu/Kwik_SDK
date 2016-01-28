@@ -23,4 +23,7 @@
     <dimen name="log_in_activity_comment_margin_top">4dp</dimen>
     <dimen name="log_in_activity_comment_text_size">15sp</dimen>
 
+    <!-- Network Password Activity -->
+    <dimen name="network_password_activity_comment_margin_top">26dp</dimen>
+
 </resources>
