@@ -43,13 +43,15 @@ public class SignupActivity extends BaseActivity {
         mActionBarTitle.setText(getResources().getString(R.string.sign_up_activity_title));
         mIntentFilter.addAction("android.provider.Telephony.SMS_RECEIVED");
 
-        Utils.setOnTouchAndClickListener(mPhoneNumberEditText,this);
+        Utils.setOnTouchAndClickListener(mPhoneNumberEditText, this);
 
         if(getIntent().getStringExtra("sender") == LoginActivity.class.getSimpleName()){
             if(getIntent().getStringExtra("phoneNumber") != null) {
                 mPhoneNumberEditText.setText(getIntent().getStringExtra("phoneNumber"));
             }
         }
+
+
     }
 
     @Override
@@ -73,7 +75,7 @@ public class SignupActivity extends BaseActivity {
                 if (message != null) {
                     showOneButtonErrorDialog(message.getTitle(), message.getMessage());
                 } else {
-                    sendPhoneNumber(phoneNumber.replace(" ",""),false, name);
+                    sendPhoneNumber(phoneNumber.replace(" ", ""), false, name);
                 }
             }
 
@@ -103,6 +105,18 @@ public class SignupActivity extends BaseActivity {
     @Override
     protected void onResume() {
         super.onResume();
+
+        //If this called after click change phone number at VerifyPhoneNumber screen
+        if(getIntent().getStringExtra("sender")!= null && getIntent().getStringExtra("sender").equals(VerifyPhoneActivity.class.getSimpleName())){
+            if(getIntent().getStringExtra("phoneNumber") != null) {
+                mPhoneNumberEditText.setText(getIntent().getStringExtra("phoneNumber"));
+            }
+
+            if(getIntent().getStringExtra("name") != null){
+                mNameEditText.setText(getIntent().getStringExtra("name"));
+            }
+        }
+
         cancelWaitForSMSTimeout = false;
         mSmsBroadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -168,17 +182,19 @@ public class SignupActivity extends BaseActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        hideProgressBar();
-                        Intent i = new Intent(SignupActivity.this,VerifyPhoneActivity.class);
-                        if(isUserExist) {
-                            i.putExtra("sender", LoginActivity.class.getSimpleName());
-                        }else{
-                            i.putExtra("sender", SignupActivity.class.getSimpleName());
+                        if(!cancelWaitForSMSTimeout) {
+                            hideProgressBar();
+                            Intent i = new Intent(SignupActivity.this, VerifyPhoneActivity.class);
+                            if (isUserExist) {
+                                i.putExtra("sender", LoginActivity.class.getSimpleName());
+                            } else {
+                                i.putExtra("sender", SignupActivity.class.getSimpleName());
+                            }
+                            i.putExtra("phoneNumber", phoneNumber);
+                            i.putExtra("name", name);
+                            startActivity(i);
+                            SignupActivity.this.finish();
                         }
-                        i.putExtra("phoneNumber", phoneNumber);
-                        i.putExtra("name",name);
-                        startActivity(i);
-                        SignupActivity.this.finish();
                     }
                 }, 8000);
 

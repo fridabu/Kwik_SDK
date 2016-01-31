@@ -66,6 +66,7 @@ public class VerifyPhoneActivity extends BaseActivity {
     // Click change phone number link
     public void changePhoneNumber(View changePhoneNumberTextView){
         Class a;
+
         if(name.isEmpty()){
             a = LoginActivity.class;
         }else{
@@ -74,7 +75,10 @@ public class VerifyPhoneActivity extends BaseActivity {
 
         Intent i = new Intent(VerifyPhoneActivity.this,a);
         i.putExtra("sender",VerifyPhoneActivity.class.getSimpleName());
+        i.putExtra("name",name);
+        i.putExtra("phoneNumber",phoneNumber);
         startActivity(i);
+        this.finish();
 
     }
 

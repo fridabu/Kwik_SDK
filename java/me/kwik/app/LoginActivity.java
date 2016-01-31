@@ -43,6 +43,14 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void onResume() {
+
+        //If this called after click change phone number at VerifyPhoneNumber screen
+        if(getIntent().getStringExtra("sender")!= null && getIntent().getStringExtra("sender").equals(VerifyPhoneActivity.class.getSimpleName())){
+            if(getIntent().getStringExtra("phoneNumber") != null) {
+                mPhoneNumberEditText.setText(getIntent().getStringExtra("phoneNumber"));
+            }
+        }
+
         super.onResume();
         mSmsBroadcastReceiver= new BroadcastReceiver() {
             @Override
