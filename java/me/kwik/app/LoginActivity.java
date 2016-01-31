@@ -76,8 +76,6 @@ public class LoginActivity extends BaseActivity {
         registerReceiver(mSmsBroadcastReceiver, mIntentFilter);
     }
 
-
-
     @Override
     protected void onPause() {
         super.onPause();

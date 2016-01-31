@@ -26,6 +26,7 @@ public class ButtonToApActivity extends BaseActivity {
     TextView mSearchButtonTextView;
     private String TAG = ButtonToApActivity.class.getSimpleName();
     private TeachButtonWifiReceiver mTeachButtonWifiReceiver;
+    private AnimationsContainer.FramesSequenceAnimation mAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,24 +39,28 @@ public class ButtonToApActivity extends BaseActivity {
 
         mTeachButtonWifiReceiver = new TeachButtonWifiReceiver();
         ImageView imageView = (ImageView) findViewById(R.id.button_to_ap_activity_image_view);
-        AnimationsContainer.FramesSequenceAnimation anim = AnimationsContainer.getInstance().createButtonToApAnim(imageView);
-        //anim.start();
+        mAnimation = AnimationsContainer.getInstance().createButtonToApAnim(imageView);
+
         showProgressBar();
 
+        String ssid = getIntent().getStringExtra("selectedWiFiSsid");
+        String password = getIntent().getStringExtra("password");
 
-        TeachWifiCredentials t = new TeachWifiCredentials(this,"kwik-private24","kwikishere");
+        TeachWifiCredentials t = new TeachWifiCredentials(this, ssid , password);
         t.start();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        mAnimation.start();
         registerReceiver(mTeachButtonWifiReceiver, new IntentFilter(KwikMe.WIFI_TEACH_COMPLETED_INTENT));
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        mAnimation.stop();
         try{
             unregisterReceiver(mTeachButtonWifiReceiver);
         }catch(Exception e){

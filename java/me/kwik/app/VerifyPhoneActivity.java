@@ -3,12 +3,15 @@ package me.kwik.app;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +20,7 @@ import me.kwik.bl.KwikMe;
 import me.kwik.bl.KwikServerError;
 import me.kwik.listeners.CreateUserListener;
 import me.kwik.listeners.LoginByValidationCodeListener;
+import me.kwik.listeners.SendValidationCodeListener;
 import me.kwik.rest.responses.CreateUserResponse;
 import me.kwik.rest.responses.LoginByValidationCodeResponse;
 import me.kwik.utils.Logger;
@@ -28,8 +32,6 @@ public class VerifyPhoneActivity extends BaseActivity {
     private String name;
     private String phoneNumber;
     private String sender;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,26 +49,40 @@ public class VerifyPhoneActivity extends BaseActivity {
         sentMessage.setText("Enter the code we sent to " + phoneNumber);
 
 
-
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+    // Click resend sms link
+    public void resendSms(View resendTextView){
+        if(phoneNumber != null ) {
+            if(sender.equals(SignupActivity.class.getSimpleName())) {
+
+                sendPhoneNumber(phoneNumber, false , null);
+            }else if(sender.equals(LoginActivity.class.getSimpleName())){
+                sendPhoneNumber(phoneNumber, true, null);
+            }
+        }
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
+    // Click change phone number link
+    public void changePhoneNumber(View changePhoneNumberTextView){
+        Class a;
+        if(name.isEmpty()){
+            a = LoginActivity.class;
+        }else{
+            a = SignupActivity.class;
+        }
+
+        Intent i = new Intent(VerifyPhoneActivity.this,a);
+        i.putExtra("sender",VerifyPhoneActivity.class.getSimpleName());
+        startActivity(i);
 
     }
-
 
     @Override
     protected void clickNext() {
         super.clickNext();
 
-        if(isEditTextsEmpty(new EditText[]{mValidationCodeEditText},new String[]{"Please enter the code"})){
+        if(isEditTextsEmpty(new EditText[]{mValidationCodeEditText}, new String[]{"Please enter the code"})){
             return;
         }
         String validationCode = mValidationCodeEditText.getText().toString();
@@ -107,4 +123,28 @@ public class VerifyPhoneActivity extends BaseActivity {
 
     }
 
+    private void sendPhoneNumber(final String phoneNumber, final boolean isUserExist,final String name) {
+
+        showProgressBar();
+        KwikMe.sendValidationCode(phoneNumber, isUserExist, new SendValidationCodeListener() {
+            @Override
+            public void sendValidationCodeDone() {
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        hideProgressBar();
+                    }
+                }, 8000);
+
+            }
+
+            @Override
+            public void sendValidationCodeError(KwikServerError kwikServerError) {
+                hideProgressBar();
+                showOneButtonErrorDialog("error", kwikServerError.getMessage());
+
+            }
+        });
+    }
 }

@@ -159,9 +159,9 @@ public class SignupActivity extends BaseActivity {
         });
     }
 
-    private void sendPhoneNumber(final String phoneNumber, final boolean isNotNewUser,final String name) {
+    private void sendPhoneNumber(final String phoneNumber, final boolean isUserExist,final String name) {
 
-            KwikMe.sendValidationCode(phoneNumber, isNotNewUser, new SendValidationCodeListener() {
+            KwikMe.sendValidationCode(phoneNumber, isUserExist, new SendValidationCodeListener() {
             @Override
             public void sendValidationCodeDone() {
                 final Handler handler = new Handler();
@@ -170,7 +170,7 @@ public class SignupActivity extends BaseActivity {
                     public void run() {
                         hideProgressBar();
                         Intent i = new Intent(SignupActivity.this,VerifyPhoneActivity.class);
-                        if(isNotNewUser) {
+                        if(isUserExist) {
                             i.putExtra("sender", LoginActivity.class.getSimpleName());
                         }else{
                             i.putExtra("sender", SignupActivity.class.getSimpleName());

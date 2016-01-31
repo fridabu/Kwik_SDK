@@ -177,6 +177,16 @@ public class ChooseNetworkActivity extends BaseActivity {
     @Override
     protected void clickNext() {
         super.clickNext();
+
+        if(lastSelectedNetworkId != -1){
+            selectedNetworkName = wifiList.get((int)lastSelectedNetworkId).SSID;
+        }else{
+            if(isEditTextsEmpty(new EditText[]{mEnterManualyNetworkEditText},new String[]{"Please enter network"})){
+                return;
+            }
+            selectedNetworkName =  mEnterManualyNetworkEditText.getText().toString();
+        }
+
         Intent i = new Intent(ChooseNetworkActivity.this,NetworkPasswordActivity.class);
         i.putExtra("selectedWiFiSsid",selectedNetworkName);
         startActivity(i);

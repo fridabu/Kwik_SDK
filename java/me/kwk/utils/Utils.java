@@ -1,8 +1,11 @@
 package me.kwk.utils;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.Selection;
 import android.text.TextWatcher;
@@ -16,7 +19,13 @@ import android.widget.PopupWindow;
 
 import java.util.ArrayList;
 
+import me.kwik.app.BaseActivity;
+import me.kwik.app.LoginActivity;
 import me.kwik.app.R;
+import me.kwik.app.VerifyPhoneActivity;
+import me.kwik.bl.KwikMe;
+import me.kwik.bl.KwikServerError;
+import me.kwik.listeners.SendValidationCodeListener;
 
 /**
  * Created by root on 25/01/16.
@@ -90,7 +99,6 @@ public class Utils {
         return t;
     }
 
-
     /**
      * show popup window method reuturn PopupWindow
      */
@@ -152,4 +160,7 @@ public class Utils {
             popupWindow.dismiss();
         }
     }
+
+
+
 }
