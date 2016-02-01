@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="me.kwik.app.GoodJobActivity"
+    android:orientation="vertical"
+    android:background="@color/kwik_me_screen_background_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kwik_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/good_job_activity_good_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Good Job Jhon!"
+        android:textColor="@color/kwik_white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/good_job_activity_now_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Now you can click the button,\nand see how it works - it will not\norder anything, yet"
+        android:textColor="@color/kwik_white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ImageView
+        android:id="@+id/good_job_animation_image_view"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/good_job_activity_tell_your_button_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tell your Button what to order\nwhen you click it"
+            android:textColor="@color/kwik_white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+        android:id="@+id/good_job_kwik_order_setup_button"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="100dp"
+        android:text="kwik Order Setup"
+        />
+
+    <TextView
+        android:id="@+id/good_job_help_link_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Help?"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/kwik_me_link_message"
+        />
+
+
+</LinearLayout>
+</LinearLayout>
