@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/log_in_activity_phone_hint"
+            android:inputType="numberDecimal"
             style="@style/KwikEditTextStyle"/>
 
     </android.support.design.widget.TextInputLayout>

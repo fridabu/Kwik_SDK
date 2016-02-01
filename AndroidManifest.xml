@@ -22,7 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".StartActivity" />
         <activity android:name=".BaseActivity" />
@@ -37,13 +41,10 @@
             android:name=".ChooseNetworkActivity"
             android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".NetworkPasswordActivity"></activity>
-        <activity android:name=".ButtonToApActivity"></activity>
-        <activity android:name=".GoodJobActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ButtonToApActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".GoodJobActivity">
         </activity>
     </application>
 

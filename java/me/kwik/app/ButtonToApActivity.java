@@ -18,6 +18,9 @@ import java.util.Collections;
 import java.util.Comparator;
 
 import me.kwik.bl.KwikMe;
+import me.kwik.bl.KwikServerError;
+import me.kwik.data.KwikProject;
+import me.kwik.listeners.GetProjectListener;
 import me.kwik.utils.Logger;
 import me.kwik.wifi.TeachWifiCredentials;
 
@@ -48,6 +51,9 @@ public class ButtonToApActivity extends BaseActivity {
 
         TeachWifiCredentials t = new TeachWifiCredentials(this, ssid , password);
         t.start();
+
+       // TeachWifiCredentials t = new TeachWifiCredentials(this, "private-kwik24" , "kwikishere");
+       // t.start();
     }
 
     @Override
@@ -60,7 +66,7 @@ public class ButtonToApActivity extends BaseActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAnimation.stop();
+       // mAnimation.stop();
         try{
             unregisterReceiver(mTeachButtonWifiReceiver);
         }catch(Exception e){
@@ -81,7 +87,24 @@ public class ButtonToApActivity extends BaseActivity {
 
         // This method call when number of wifi connections changed
         public void onReceive(Context c, Intent intent) {
-            Logger.d(TAG,"Teach wifi response = %s",intent.getBooleanExtra(KwikMe.WIFI_TEACH_COMPLETED_INTENT_SUCCESS_EXTRA,false));
+            boolean teach = intent.getBooleanExtra(KwikMe.WIFI_TEACH_COMPLETED_INTENT_SUCCESS_EXTRA,false);
+            Logger.d(TAG, "Teach wifi response = %s", teach);
+
+            if(teach){
+                KwikMe.getProject("569f56daddde9e100fcc5fd8", new GetProjectListener() {
+                    @Override
+                    public void getProjectDone(KwikProject project) {
+                        Intent i = new Intent(ButtonToApActivity.this,GoodJobActivity.class);
+                        startActivity(i);
+                        finish();
+                    }
+
+                    @Override
+                    public void getProjectError(KwikServerError error) {
+                        showOneButtonErrorDialog("Error",error.getMessage());
+                    }
+                });
+            }
         }
     }
 }
